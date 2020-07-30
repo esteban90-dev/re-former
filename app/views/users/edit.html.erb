@@ -1,9 +1,6 @@
-<%= form_for @user do |f| %>
-  <%=f.label :username %>
-  <%=f.text_field :username %> <br><br>
-  <%=f.label :email %>
-  <%=f.text_field :email, placeholder: "email@email.com"%><br><br>
-  <%=f.label "Password:" %>
-  <%=f.password_field :password%><br><br>
-  <%=f.submit%>
-<% end %>
+<h1>Edit an existing user:</h1>
+
+<%= render 'form' %>
+
+<br><br>
+<%= link_to 'All users', users_path %>
